@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="static/styles/style.css">
     <title>Barbearia</title>
 </head>
 <body class="bg-black text-white">
@@ -38,23 +38,23 @@
 
     <main>
 
-    <section class="position-relative text-white" style="height: 70vh; background-image: url('static/imgs/banner/barbeiro_banner_menor.png'); background-size: cover; background-position: center;">
+    <section class="from-left position-relative text-white" style="height: 70vh; background-image: url('static/imgs/banner/barbeiro_banner_menor.png'); background-size: cover; background-position: center;">
       <!-- Overlay escuro -->
       <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.6);"></div>
 
       <!-- Conteúdo centralizado -->
       <div class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative text-center">
-        <h1 class="display-3 fw-bold">Bem-vindo à Minha Barbearia</h1>
+        <h1 class="from-left display-3 fw-bold">Bem-vindo à Minha Barbearia</h1>
         <p class="lead fs-4">A melhor barbearia do centro de Belém.</p>
         <a href="#servicos" class="btn btn-light btn-lg mt-4 shadow">Ver Serviços</a>
       </div>
     </section>
       <br>
-      <h1 class='ms-4'>Sobre Nós</h1>
-      <p class='lead fs-4 ms-4'>Somos uma barbearia localizada no centro urbano da cidade. Temos um ambiente amigável e muito receptivo para receber você e sua família. Temos mesa de bilhar, TV com canais esportivos, área para jogos e um ambiente devidamente climatizado.
+      <h1 class='from-left ms-4'>Sobre Nós</h1>
+      <p class='from-left lead fs-4 ms-4'>Somos uma barbearia localizada no centro urbano da cidade. Temos um ambiente amigável e muito receptivo para receber você e sua família. Temos mesa de bilhar, TV com canais esportivos, área para jogos e um ambiente devidamente climatizado.
       </p>
 
-      <div id="carouselBarbearia" class="carousel slide my-5" data-bs-ride="carousel">
+      <div id="from-left carouselBarbearia" class="carousel slide my-5" data-bs-ride="carousel">
     <div class="carousel-inner">
 
       <div class="carousel-item active">
@@ -73,9 +73,9 @@
     </button>
     </div>
     
-    <h2 class='ms-4'>Nossos Profissionais</h2>
+    <h2 class='from-left ms-4'>Nossos Profissionais</h2>
       <br>
-      <div class="d-flex justify-content-center flex-wrap gap-4">
+      <div class="from-left d-flex justify-content-center flex-wrap gap-4">
         <div class="card bg-white text-dark" style="width: 25rem;">
         <img src="static/imgs/barbeiros/Thomas.png" class="card-img-top" alt="...">
         <div class="card-body">
@@ -119,11 +119,11 @@
         <br>
         <br>
 
-      <h1 class="ms-4 text-white">Serviços</h1>
+      <h1 class="from-left ms-4 text-white">Serviços</h1>
           <br>
 
-          <div id="carouselServicos" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+          <div id="from-left carouselServicos" class="carousel slide" data-bs-ride="carousel">
+            <div class="from-left carousel-inner">
 
               <!-- Slide 1 -->
               <div class="carousel-item active">
@@ -186,20 +186,53 @@
           </div>
           <br>
           <br>
-      <h1 class="ms-4 text-white">Contato</h1>
-        <p class="lead fs-4 ms-4">Entre em contato com nosso atendimento direto pelo WhatsApp:</p>
+      <h1 class="from-left ms-4 text-white">Contato</h1>
+        <p class="from-left lead fs-4 ms-4">Entre em contato com nosso atendimento direto pelo WhatsApp:</p>
         <!-- Botão do WhatsApp -->
-        <div class="ms-4">
+        <div class="from-left ms-4">
           <a href="https://wa.me/5591982473965" target="_blank" class="btn btn-success btn-lg d-inline-flex align-items-center gap-2 shadow">
             <i class="bi bi-whatsapp fs-4"></i>
             Fale Conosco
           </a>
         </div>
         <br>
-        <p class="lead fs-4 ms-4">Ou, se preferir, deixe para nós as suas informações de contato no formulário abaixo:</p>
+        <p class="from-left lead fs-4 ms-4">Ou, se preferir, deixe para nós as suas informações de contato no formulário abaixo:</p>
+
+        <section id="contato" class="py-5 bg-black text-white">
+          <div class="container">
+            <h2 class="text-center mb-4">Fale com a Gente</h2>
+
+            <form action="https://formspree.io/f/{SEU_ID_AQUI}" method="POST" class="bg-white text-black p-4 rounded shadow">
+              <!-- Nome -->
+              <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required>
+              </div>
+
+              <!-- WhatsApp -->
+              <div class="mb-3">
+                <label for="contato" class="form-label">WhatsApp</label>
+                <input type="tel" class="form-control" id="contato" name="contato" placeholder="(xx) xxxxx-xxxx" required>
+              </div>
+
+              <!-- Mensagem -->
+              <div class="mb-3">
+                <label for="mensagem" class="form-label">Descreva o serviço desejado</label>
+                <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Corte, barba, pintura..." required></textarea>
+              </div>
+
+              <!-- Botão -->
+              <button type="submit" class="btn btn-dark text-white w-100">Enviar</button>
+            </form>
+          </div>
+        </section>
+
+
+
       </main>
     
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="static/scripts/script.js"></script>
 </body>
 </html>

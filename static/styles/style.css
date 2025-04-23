@@ -1,3 +1,12 @@
-body{
-    background-color: black;
-}
+/*  entrada da esquerda */
+.from-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease;
+  }
+  
+  /* Quando entrar na tela */
+  .from-left.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
