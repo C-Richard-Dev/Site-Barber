@@ -50,11 +50,11 @@
       </div>
     </section>
       <br>
-      <h1 class='from-left ms-4'>Sobre Nós</h1>
+      <section id='sobre'><h1 class='from-left ms-4'>Sobre Nós</h1></section>
       <p class='from-left lead fs-4 ms-4'>Somos uma barbearia localizada no centro urbano da cidade. Temos um ambiente amigável e muito receptivo para receber você e sua família. Temos mesa de bilhar, TV com canais esportivos, área para jogos e um ambiente devidamente climatizado.
       </p>
 
-      <div id="from-left carouselBarbearia" class="carousel slide my-5" data-bs-ride="carousel">
+      <div id="carouselBarbearia" class="carousel slide my-5" data-bs-ride="carousel">
     <div class="carousel-inner">
 
       <div class="carousel-item active">
@@ -119,70 +119,73 @@
         <br>
         <br>
 
-      <h1 class="from-left ms-4 text-white">Serviços</h1>
+        <section id='servicos'><h1 class="from-left ms-4 text-white">Serviços</h1></section>
           <br>
+          <div class="carousel-container position-relative" style="background-image: url('https://cdn.pixabay.com/photo/2015/10/26/20/46/haircut-1007891_1280.jpg'); background-size: cover; background-position: center 30%;">
+            <!-- Overlay escuro -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.6);"></div>
+            <div id="carouselServicos" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
 
-          <div id="from-left carouselServicos" class="carousel slide" data-bs-ride="carousel">
-            <div class="from-left carousel-inner">
-
-              <!-- Slide 1 -->
-              <div class="carousel-item active">
-                <div class="d-flex justify-content-center gap-4 flex-wrap">
-                  <div class="card text-center bg-white text-dark shadow" style="width: 12rem; height: 20rem;">
-                    <div class="card-body d-flex flex-column justify-content-center">
-                      <h5 class="card-title fs-4">Corte Degradê</h5>
-                      <h2 class="card-text">R$35,00</h2>
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div class="d-flex justify-content-center gap-4 flex-wrap">
+                    <div class="card text-center bg-white text-dark shadow" style="width: 12rem; height: 20rem;">
+                      <div class="card-body d-flex flex-column justify-content-center">
+                        <h5 class="card-title fs-4">Corte Degradê</h5>
+                        <h2 class="card-text">R$35,00</h2>
+                      </div>
                     </div>
-                  </div>
-                  <div class="card text-center bg-white text-dark shadow" style="width: 12rem; height: 20rem;">
-                    <div class="card-body d-flex flex-column justify-content-center">
-                      <h5 class="card-title fs-4">Corte Navalhado</h5>
-                      <h2 class="card-text">R$40,00</h2>
+                    <div class="card text-center bg-white text-dark shadow" style="width: 12rem; height: 20rem;">
+                      <div class="card-body d-flex flex-column justify-content-center">
+                        <h5 class="card-title fs-4">Corte Navalhado</h5>
+                        <h2 class="card-text">R$40,00</h2>
+                      </div>
                     </div>
-                  </div>
-                  
-                </div>
-              </div>
-
-              <!-- Slide 2 -->
-              <div class="carousel-item">
-                <div class="d-flex justify-content-center gap-4 flex-wrap">
-                  <div class="card text-center bg-white text-dark shadow" style="width: 12rem; height: 20rem;">
-                    <div class="card-body d-flex flex-column justify-content-center">
-                      <h5 class="card-title fs-4">Barba</h5>
-                      <h2 class="card-text">R$50,00</h2>
-                    </div>
-                  </div>
-                  <div class="card text-center bg-white text-dark shadow" style="width: 12rem; height: 20rem;">
-                    <div class="card-body d-flex flex-column justify-content-center">
-                      <h5 class="card-title fs-4">Corte Social</h5>
-                      <h2 class="card-text">R$25,00</h2>
-                    </div>
+                    
                   </div>
                 </div>
-              </div>
 
-              <!-- Slide 3 -->
-              <div class="carousel-item">
-                <div class="d-flex justify-content-center gap-4 flex-wrap">
-                  <div class="card text-center bg-white text-dark shadow" style="width: 18rem; height: 20rem;">
-                    <div class="card-body d-flex flex-column justify-content-center">
-                      <h5 class="card-title fs-4">Combo Barba + Cabelo</h5>
-                      <h2 class="card-text">R$90,00</h2>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center gap-4 flex-wrap">
+                    <div class="card text-center bg-white text-dark shadow" style="width: 12rem; height: 20rem;">
+                      <div class="card-body d-flex flex-column justify-content-center">
+                        <h5 class="card-title fs-4">Barba</h5>
+                        <h2 class="card-text">R$50,00</h2>
+                      </div>
+                    </div>
+                    <div class="card text-center bg-white text-dark shadow" style="width: 12rem; height: 20rem;">
+                      <div class="card-body d-flex flex-column justify-content-center">
+                        <h5 class="card-title fs-4">Corte Social</h5>
+                        <h2 class="card-text">R$25,00</h2>
+                      </div>
                     </div>
                   </div>
                 </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center gap-4 flex-wrap">
+                    <div class="card text-center bg-white text-dark shadow" style="width: 18rem; height: 20rem;">
+                      <div class="card-body d-flex flex-column justify-content-center">
+                        <h5 class="card-title fs-4">Combo Barba + Cabelo</h5>
+                        <h2 class="card-text">R$90,00</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
 
+              <!-- Botões de navegação -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselServicos" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
-
-            <!-- Botões de navegação -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicos" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselServicos" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
           </div>
           <br>
           <br>
