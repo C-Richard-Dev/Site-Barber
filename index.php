@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Whisper&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/styles/style.css">
     <title>Barbearia</title>
 </head>
@@ -44,13 +45,13 @@
 
       <!-- Conteúdo centralizado -->
       <div class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative text-center">
-        <h1 class="from-left display-3 fw-bold">Bem-vindo à Minha Barbearia</h1>
+        <h1 class="from-left display-3 fw-bold titulo-principal">Bem-vindo à Minha Barbearia</h1>
         <p class="lead fs-4">A melhor barbearia do centro de Belém.</p>
         <a href="#servicos" class="btn btn-light btn-lg mt-4 shadow">Ver Serviços</a>
       </div>
     </section>
       <br>
-      <section id='sobre'><h1 class='from-left ms-4'>Sobre Nós</h1></section>
+      <section id='sobre'><h1 class='from-left ms-4   titulo-principal'>Sobre Nós</h1></section>
       <p class='from-left lead fs-4 ms-4'>Somos uma barbearia localizada no centro urbano da cidade. Temos um ambiente amigável e muito receptivo para receber você e sua família. Temos mesa de bilhar, TV com canais esportivos, área para jogos e um ambiente devidamente climatizado.
       </p>
 
@@ -73,7 +74,7 @@
     </button>
     </div>
     
-    <h2 class='from-left ms-4'>Nossos Profissionais</h2>
+    <h1 class='from-left ms-4  titulo-principal'>Nossos Profissionais</h1>
       <br>
       <div class="from-left d-flex justify-content-center flex-wrap gap-4">
         <div class="card bg-white text-dark" style="width: 25rem;">
@@ -119,7 +120,7 @@
         <br>
         <br>
 
-        <section id='servicos'><h1 class="from-left ms-4 text-white">Serviços</h1></section>
+        <section id='servicos'><h1 class="from-left ms-4 text-white  titulo-principal">Serviços</h1></section>
           <br>
           <div class="carousel-container position-relative" style="background-image: url('https://cdn.pixabay.com/photo/2015/10/26/20/46/haircut-1007891_1280.jpg'); background-size: cover; background-position: center 30%;">
             <!-- Overlay escuro -->
@@ -132,14 +133,14 @@
                   <div class="d-flex justify-content-center gap-4 flex-wrap">
                     <div class="card text-center bg-white text-dark shadow" style="width: 12rem; height: 20rem;">
                       <div class="card-body d-flex flex-column justify-content-center">
-                        <h5 class="card-title fs-4">Corte Degradê</h5>
-                        <h2 class="card-text">R$35,00</h2>
+                        <h5 class="card-title fs-4 titulo-principal">Corte Degradê</h5>
+                        <h2 class="card-text titulo-principal">R$35,00</h2>
                       </div>
                     </div>
                     <div class="card text-center bg-white text-dark shadow" style="width: 12rem; height: 20rem;">
                       <div class="card-body d-flex flex-column justify-content-center">
-                        <h5 class="card-title fs-4">Corte Navalhado</h5>
-                        <h2 class="card-text">R$40,00</h2>
+                        <h5 class="card-title fs-4 titulo-principal">Corte Navalhado</h5>
+                        <h2 class="card-text titulo-principal">R$40,00</h2>
                       </div>
                     </div>
                     
@@ -151,14 +152,14 @@
                   <div class="d-flex justify-content-center gap-4 flex-wrap">
                     <div class="card text-center bg-white text-dark shadow" style="width: 12rem; height: 20rem;">
                       <div class="card-body d-flex flex-column justify-content-center">
-                        <h5 class="card-title fs-4">Barba</h5>
-                        <h2 class="card-text">R$50,00</h2>
+                        <h5 class="card-title fs-4 titulo-principal">Barba</h5>
+                        <h2 class="card-text titulo-principal">R$50,00</h2>
                       </div>
                     </div>
                     <div class="card text-center bg-white text-dark shadow" style="width: 12rem; height: 20rem;">
                       <div class="card-body d-flex flex-column justify-content-center">
-                        <h5 class="card-title fs-4">Corte Social</h5>
-                        <h2 class="card-text">R$25,00</h2>
+                        <h5 class="card-title fs-4 titulo-principal">Corte Social</h5>
+                        <h2 class="card-text titulo-principal">R$25,00</h2>
                       </div>
                     </div>
                   </div>
@@ -169,8 +170,8 @@
                   <div class="d-flex justify-content-center gap-4 flex-wrap">
                     <div class="card text-center bg-white text-dark shadow" style="width: 18rem; height: 20rem;">
                       <div class="card-body d-flex flex-column justify-content-center">
-                        <h5 class="card-title fs-4">Combo Barba + Cabelo</h5>
-                        <h2 class="card-text">R$90,00</h2>
+                        <h5 class="card-title fs-4 titulo-principal">Combo Barba + Cabelo</h5>
+                        <h2 class="card-text titulo-principal">R$90,00</h2>
                       </div>
                     </div>
                   </div>
@@ -189,7 +190,7 @@
           </div>
           <br>
           <br>
-      <h1 class="from-left ms-4 text-white">Contato</h1>
+      <h1 class="from-left ms-4 text-white titulo-principal">Contato</h1>
         <p class="from-left lead fs-4 ms-4">Entre em contato com nosso atendimento direto pelo WhatsApp:</p>
         <!-- Botão do WhatsApp -->
         <div class="from-left ms-4">
@@ -203,7 +204,7 @@
 
         <section id="contato" class="py-5 bg-black text-white">
           <div class="container">
-            <h2 class="text-center mb-4">Fale com a Gente</h2>
+            <h2 class="text-center mb-4 titulo-principal">Fale com a Gente</h2>
 
             <form action="https://formspree.io/f/{SEU_ID_AQUI}" method="POST" class="bg-white text-black p-4 rounded shadow">
               <!-- Nome -->

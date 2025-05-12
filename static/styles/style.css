@@ -10,3 +10,8 @@
     opacity: 1;
     transform: translateX(0);
   }
+
+
+  .titulo-principal{
+     font-family: 'UnifrakturMaguntia';
+  }
